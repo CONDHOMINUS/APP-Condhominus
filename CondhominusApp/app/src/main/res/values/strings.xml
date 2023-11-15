@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Condhominus</string>
+    <string name="placeholder_age">Idade</string>
+    <string name="placeholder_apto">Apto</string>
+    <string name="placeholder_block">Bloco</string>
+    <string name="placeholder_name">Nome completo</string>
+    <string name="save">Salvar</string>
+    <string name="update_profile">Atualizar perfil</string>
+    <string name="edit">Editar</string>
+    <string name="dont_logged">Faça login</string>
+    <string name="accomplish_login">Fazer login</string>
+    <string name="register_tenant">Cadastro de inquilinos</string>
+    <string name="condominium">Condomínio</string>
+    <string name="obs">Observação</string>
+    <string name="placeholder_document">Informe seu CPF</string>
+    <string name="password">Senha</string>
+    <string name="born_date">Data de nascimento</string>
+    <string name="login">Login</string>
+    <string name="logged">Bem vindo, User!</string>
+    <string name="register">Salvar</string>
+    <string name="apply_document">Informe um CPF ou senha válido(a)</string>
+    <string name="all_fields">Preencha todos os campos</string>
+</resources>
