@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Condhominus.iml" filepath="$PROJECT_DIR$/.idea/Condhominus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Condhominus.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Condhominus.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Condhominus.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Condhominus.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Condhominus.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Condhominus.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Condhominus.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Condhominus.app.unitTest.iml" />
     </modules>
   </component>
 </project>
