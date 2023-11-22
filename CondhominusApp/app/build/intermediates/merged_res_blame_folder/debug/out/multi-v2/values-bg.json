@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Tech For\\AndroidStudioProjects\\APP-Condhominus\\CondhominusApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
+            "outputFile": "C:\\Users\\Tech For\\Documents\\trabalhos faculdade\\APP-Condhominus\\CondhominusApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Tech For\\.gradle\\caches\\transforms-3\\acd1ad97adb0c2dc8d48e5081f9b63ea\\transformed\\appcompat-1.5.0\\res\\values-bg\\values-bg.xml",

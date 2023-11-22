@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Tech For\\AndroidStudioProjects\\APP-Condhominus\\CondhominusApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
+            "outputFile": "C:\\Users\\Tech For\\Documents\\trabalhos faculdade\\APP-Condhominus\\CondhominusApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Tech For\\.gradle\\caches\\transforms-3\\c5259146d740ce36719c8f7d70d3ace7\\transformed\\material-1.9.0\\res\\values-sq\\values-sq.xml",

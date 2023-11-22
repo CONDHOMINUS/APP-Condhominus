@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\Tech For\.gradle\caches\transforms-3\4df84a718afd7130e6454b07f627c9d2\transformed\viewbinding-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\Tech For\.gradle\caches\transforms-3\7155e3624f6ab937e40aefe5d227ea20\transformed\fragment-ktx-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity-ktx:1.2.2] C:\Users\Tech For\.gradle\caches\transforms-3\88437bd7b19f1d0fe1c366ff7b0fc928\transformed\activity-ktx-1.2.2\AndroidManifest.xml:17:1-24:12
@@ -58,29 +58,29 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Tech For\.gra
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0] C:\Users\Tech For\.gradle\caches\transforms-3\e3f31dfe40fd520c5dbfeb6580f2ebca\transformed\lifecycle-livedata-core-2.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Tech For\.gradle\caches\transforms-3\ba5a86d9af159cb6227150f82a9a5157\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Tech For\.gradle\caches\transforms-3\afb13ffca8cf2864f5bd087f44c754c9\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:1-32:12
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:7:5-30:19
+ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:7:5-30:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\Tech For\.gradle\caches\transforms-3\c5259146d740ce36719c8f7d70d3ace7\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\Tech For\.gradle\caches\transforms-3\c5259146d740ce36719c8f7d70d3ace7\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Tech For\.gradle\caches\transforms-3\6fcea0fddd862b470e39af4793f0e5ac\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -100,45 +100,45 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Tech For\.gradle\c
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\Tech For\.gradle\caches\transforms-3\08bdc8530ed8c4237b10a7b6c351e326\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:13:9-49
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:13:9-49
 activity#com.example.condhominus.MainActivity
-ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:14:9-18:20
+ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:14:9-18:20
 	android:exported
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:16:13-36
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:15:13-41
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:15:13-41
 activity#com.example.condhominus.SplashActivity
-ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:20:9-29:20
+ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:20:9-29:20
 	android:screenOrientation
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:23:13-49
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:23:13-49
 	android:exported
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:22:13-36
 	android:name
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:21:13-43
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:21:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml:27:27-74
 uses-sdk
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\Tech For\.gradle\caches\transforms-3\4df84a718afd7130e6454b07f627c9d2\transformed\viewbinding-7.1.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\Tech For\.gradle\caches\transforms-3\4df84a718afd7130e6454b07f627c9d2\transformed\viewbinding-7.1.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\Tech For\.gradle\caches\transforms-3\7155e3624f6ab937e40aefe5d227ea20\transformed\fragment-ktx-1.3.6\AndroidManifest.xml:20:5-22:41
@@ -247,16 +247,16 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Tech For\.gradle\ca
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Tech For\.gradle\caches\transforms-3\ba5a86d9af159cb6227150f82a9a5157\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Tech For\.gradle\caches\transforms-3\afb13ffca8cf2864f5bd087f44c754c9\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Tech For\.gradle\caches\transforms-3\afb13ffca8cf2864f5bd087f44c754c9\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Tech For\AndroidStudioProjects\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Tech For\Documents\trabalhos faculdade\APP-Condhominus\CondhominusApp\app\src\main\AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Tech For\.gradle\caches\transforms-3\7694c501b0f19cc4fc1322cdba651a44\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Tech For\.gradle\caches\transforms-3\4ddb24c4e296784fea9567e6347ef9b2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
