@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navHome"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navLogin"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_profile"
+        android:title="Login" />
+
+    <item
+        android:id="@+id/navRegisterCondominium"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_register"
+        android:title="Condomínio" />
+
+    <item
+        android:id="@+id/navRegisterTenant"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_profile"
+        android:title="Inquilino" />
+
+    <item
+        android:id="@+id/navLogout"
+        android:enabled="true"
+        android:icon="@drawable/ic_logout"
+        android:title="Sair" />
+
+</menu>
