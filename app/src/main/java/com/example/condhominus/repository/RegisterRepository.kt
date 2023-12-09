@@ -1,5 +1,7 @@
 package com.example.condhominus.repository
 
+import com.example.condhominus.model.CondominiumRegister
+import com.example.condhominus.model.CondominiumResponse
 import com.example.condhominus.model.Tenant
 import com.example.condhominus.model.TenantResponse
 import com.example.condhominus.services.CondhominusService
@@ -15,14 +17,22 @@ import retrofit2.converter.gson.GsonConverterFactory
 class RegisterRepository {
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://condhominus.azurewebsites.net/")
+        .baseUrl("https://condhominus.somee.com")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
     private val service = retrofit.create(CondhominusService::class.java)
+
     suspend fun registerTenant(tenant: Tenant): TenantResponse? {
         return withContext(Dispatchers.Default) {
             processData(service.setTenant(RequestBody.create(MediaType.parse("application/json"), Gson().toJson(tenant))))
+        }
+    }
+
+    suspend fun registerCondominium(condominiumRegister: CondominiumRegister): CondominiumResponse? {
+        return withContext(Dispatchers.Default) {
+            println("Body: ${RequestBody.create(MediaType.parse("application/json"), Gson().toJson(condominiumRegister))}")
+            processData(service.registerCondominium(RequestBody.create(MediaType.parse("application/json"), Gson().toJson(condominiumRegister))))
         }
     }
 
