@@ -9,7 +9,8 @@
     <string name="edit">Editar</string>
     <string name="dont_logged">Faça login</string>
     <string name="accomplish_login">Fazer login</string>
-    <string name="register_tenant">Cadastro de inquilinos</string>
+    <string name="register_tenant">Cadastro de Inquilino</string>
+    <string name="register_condominium">Cadastro de Condomínio</string>
     <string name="condominium">Condomínio</string>
     <string name="obs">Observação</string>
     <string name="placeholder_document">Informe seu CPF</string>
@@ -22,4 +23,11 @@
     <string name="apply_document">Informe um CPF ou senha válido(a)</string>
     <string name="all_fields">Preencha todos os campos</string>
     <string name="title_admin_name">Olá, %s!</string>
+    <string name="zip_code">CEP</string>
+    <string name="street">Logradouro</string>
+    <string name="city">Cidade</string>
+    <string name="state">Estado</string>
+    <string name="country">País</string>
+    <string name="number">Número</string>
+    <string name="name">Nome do Condomínio</string>
 </resources>

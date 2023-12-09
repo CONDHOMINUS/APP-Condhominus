@@ -27,7 +27,6 @@ LoginFragment : Fragment() {
     private val binding get() = _binding!!
     private lateinit var viewModel: LoginViewModel
 
-
     companion object {
         @JvmStatic
         fun newInstance() = LoginFragment()
