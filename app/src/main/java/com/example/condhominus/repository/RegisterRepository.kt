@@ -1,9 +1,10 @@
 package com.example.condhominus.repository
 
-import com.example.condhominus.model.CondominiumRegister
-import com.example.condhominus.model.CondominiumResponse
-import com.example.condhominus.model.Tenant
-import com.example.condhominus.model.TenantResponse
+import com.example.condhominus.model.condominium.CondominiumRegister
+import com.example.condhominus.model.condominium.CondominiumResponse
+import com.example.condhominus.model.condominium.CondominiumsListResponse
+import com.example.condhominus.model.tenant.Tenant
+import com.example.condhominus.model.tenant.TenantResponse
 import com.example.condhominus.services.CondhominusService
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
@@ -26,6 +27,12 @@ class RegisterRepository {
     suspend fun registerTenant(tenant: Tenant): TenantResponse? {
         return withContext(Dispatchers.Default) {
             processData(service.setTenant(RequestBody.create(MediaType.parse("application/json"), Gson().toJson(tenant))))
+        }
+    }
+
+    suspend fun getCondominiums(): CondominiumsListResponse? {
+        return withContext(Dispatchers.Default) {
+            processData(service.getCondominiums())
         }
     }
 

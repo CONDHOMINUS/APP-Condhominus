@@ -1,6 +1,6 @@
 package com.example.condhominus.repository
 
-import com.example.condhominus.model.AddressResponse
+import com.example.condhominus.model.address.AddressResponse
 import com.example.condhominus.services.CondhominusService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

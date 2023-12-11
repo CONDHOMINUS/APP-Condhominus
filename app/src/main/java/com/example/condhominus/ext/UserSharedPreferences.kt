@@ -2,7 +2,7 @@ package com.example.condhominus.ext
 
 import android.app.Activity
 import android.content.Context
-import com.example.condhominus.model.Login
+import com.example.condhominus.model.login.Login
 import com.google.gson.Gson
 
 class UserSharedPreferences(activity: Activity) {
