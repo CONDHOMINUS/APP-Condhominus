@@ -1,13 +1,16 @@
 package com.example.condhominus.view.scheduling
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.condhominus.R
 import com.example.condhominus.databinding.FragmentSchedulingBinding
 import com.example.condhominus.model.Schedule
 import com.example.condhominus.view.scheduling.adapter.AvailableSchedulesAdapters
@@ -50,13 +53,39 @@ class SchedulingFragment : Fragment() {
 
                             val selectedSchedule = adapterView.getItemAtPosition(position) as Schedule
 
-                            var showPopUp = PopUpRegisterScheduleFragment() // Passar os paramêtros por aqui e carregar na do POPUP
-                            showPopUp.show((activity as AppCompatActivity).supportFragmentManager, "showPopUp")
+//                            var showPopUp = PopUpRegisterScheduleFragment() // Passar os paramêtros por aqui e carregar na do POPUP
+//                            showPopUp.show((activity as AppCompatActivity).supportFragmentManager, "showPopUp")
+
+                            alertDialogWithEditText()
+                            // vc não precisa criar um fragment pra isso, até poderia mas é mais dificil gerenciar
                         }
                     }
                 }
             }
         }
+    }
+
+//    private fun alertDialogWithEditText(valorInput: String, ...)
+    private fun alertDialogWithEditText() {
+        val layoutInflater = LayoutInflater.from(requireContext())
+        val customView = layoutInflater.inflate(R.layout.fragment_pop_up_register_schedule, null)
+        val loginPassword = customView.findViewById<EditText>(R.id.loginPassword)
+
+        //aqui passamos os valores default para os inputs, pegaremos do item clickado no adapter, e recebemos aqui como parametro
+        loginPassword.setText("Valor Inicial")
+
+        AlertDialog.Builder(requireContext())
+            .setTitle("Informe os dados")
+            .setView(customView)
+            .setPositiveButton("OK") { dialog, _ ->
+            //provavelmente aqui pegaremos os valores definidos nos inputs, algo como idDoInput.text.toString()
+                dialog.dismiss()
+            }
+            .setNegativeButton("Cancelar") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .create()
+            .show()
     }
 
     private fun getCurrentDate(): String =
