@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.scheduling
+package com.example.condhominus.view.scheduling.adapter
 
 import android.content.Context
 import android.view.View
@@ -11,7 +11,7 @@ import com.example.condhominus.model.Schedule
 import java.time.OffsetDateTime
 import java.time.format.DateTimeFormatter
 
-class AvailableSchedulesAdapters(var context: Context, var availableSchedules: AvailableSchedulesResponse) : BaseAdapter() {
+class AvailableSchedulesAdapters(var context: Context, private var availableSchedules: AvailableSchedulesResponse) : BaseAdapter() {
 
     override fun getCount(): Int {
         return availableSchedules.agendas.size

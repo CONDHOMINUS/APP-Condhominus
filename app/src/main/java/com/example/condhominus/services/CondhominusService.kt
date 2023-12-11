@@ -1,11 +1,6 @@
 package com.example.condhominus.services
 
-import com.example.condhominus.model.AddressResponse
-import com.example.condhominus.model.CondominiumRegister
-import com.example.condhominus.model.CondominiumResponse
 import com.example.condhominus.model.AvailableSchedulesResponse
-import com.example.condhominus.model.LoginResponse
-import com.example.condhominus.model.TenantResponse
 import com.example.condhominus.model.address.AddressResponse
 import com.example.condhominus.model.condominium.CondominiumResponse
 import com.example.condhominus.model.condominium.CondominiumsListResponse
@@ -35,6 +30,6 @@ interface CondhominusService {
     @GET("{zipCode}/json/")
     suspend fun getAddress(@Path("zipCode") zipCode: String): Response<AddressResponse>
 
-    @GET("/AgendamentoMudanca/ObterAgendasDisponiveis")
+    @GET("/agendamentomudanca/obteragendasdisponiveis")
     suspend fun getAvailableSchedules(): Response<AvailableSchedulesResponse>
 }

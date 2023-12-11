@@ -5,12 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.condhominus.databinding.FragmentSchedulingBinding
 import com.example.condhominus.model.Schedule
+import com.example.condhominus.view.scheduling.adapter.AvailableSchedulesAdapters
+import com.example.condhominus.ui.scheduling.PopUpRegisterScheduleFragment
+import com.example.condhominus.view.scheduling.viewmodel.SchedulingViewModel
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
