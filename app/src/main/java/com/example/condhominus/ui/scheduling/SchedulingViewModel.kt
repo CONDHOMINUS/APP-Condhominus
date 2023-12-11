@@ -1,3 +1,4 @@
+
 package com.example.condhominus.ui.scheduling
 
 import androidx.lifecycle.MutableLiveData
@@ -22,7 +23,6 @@ class SchedulingViewModel : ViewModel() {
                 } ?: run {
                     errorAvailableSchedulesLive.value = "response null"
                 }
-
             } catch (e: Exception) {
                 errorAvailableSchedulesLive.value = e.localizedMessage
             }

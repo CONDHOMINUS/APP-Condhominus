@@ -84,6 +84,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@animator/selector_password_toggle_black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +98,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
-                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
                 android:translationY="-8dp" />
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -1,8 +1,12 @@
 package com.example.condhominus.ext
 
+import android.annotation.SuppressLint
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
+import java.text.ParseException
+import java.text.SimpleDateFormat
+import java.util.Date
 
 class DocumentMask(private val editText: EditText) : TextWatcher {
 
@@ -146,5 +150,19 @@ class ZipCodeMask(private val editText: EditText, private val zipCodeCallback: (
         }
 
         return maskedText.toString()
+    }
+}
+
+@SuppressLint("SimpleDateFormat")
+fun String.formatBornDate(): String {
+    return try {
+        SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(
+            SimpleDateFormat("ddMMyyyy").parse(
+                this.replace("\\D".toRegex(), "")
+            ) ?: throw ParseException("Parsing error", 0)
+        )
+    } catch (e: Exception) {
+        e.printStackTrace()
+        ""
     }
 }

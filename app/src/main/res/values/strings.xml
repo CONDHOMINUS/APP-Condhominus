@@ -4,6 +4,7 @@
     <string name="placeholder_apto">Apto</string>
     <string name="placeholder_block">Bloco</string>
     <string name="placeholder_name">Nome completo</string>
+    <string name="placeholder_apto_register">Número Apartamento</string>
     <string name="save">Salvar</string>
     <string name="update_profile">Atualizar perfil</string>
     <string name="edit">Editar</string>

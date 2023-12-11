@@ -1,7 +1,7 @@
 package com.example.condhominus.repository
 
-import com.example.condhominus.model.LoginBody
-import com.example.condhominus.model.LoginResponse
+import com.example.condhominus.model.login.LoginBody
+import com.example.condhominus.model.login.LoginResponse
 import com.example.condhominus.services.CondhominusService
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
