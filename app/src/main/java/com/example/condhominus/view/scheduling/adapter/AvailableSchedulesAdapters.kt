@@ -1,5 +1,3 @@
-package com.example.condhominus.view.scheduling.adapter
-
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
@@ -11,22 +9,21 @@ import com.example.condhominus.model.Schedule
 import java.time.OffsetDateTime
 import java.time.format.DateTimeFormatter
 
-class AvailableSchedulesAdapters(var context: Context, private var availableSchedules: AvailableSchedulesResponse) : BaseAdapter() {
+class AvailableSchedulesAdapters(
+    var context: Context,
+    private var availableSchedules: AvailableSchedulesResponse
+) : BaseAdapter() {
 
-    override fun getCount(): Int {
-        return availableSchedules.agendas.size
-    }
+    private var onItemClickListener: OnItemClickListener? = null
 
-    override fun getItem(position: Int): Any {
-        return availableSchedules.agendas[position]
-    }
+    override fun getCount(): Int = availableSchedules.agendas.size
 
-    override fun getItemId(position: Int): Long {
-        return position.toLong()
-    }
+    override fun getItem(position: Int): Any = availableSchedules.agendas[position]
 
-    override fun getView(position: Int, p1: View?, p2: ViewGroup?): View {
-        val view:View = View.inflate(context, R.layout.view_card_item_list, null)
+    override fun getItemId(position: Int): Long = position.toLong()
+
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+        val view: View = View.inflate(context, R.layout.view_card_item_list, null)
 
         var dateView: TextView = view.findViewById(R.id.availableDateView)
         var periodMorningView: TextView = view.findViewById(R.id.periodMorningView)
@@ -37,20 +34,32 @@ class AvailableSchedulesAdapters(var context: Context, private var availableSche
 
         dateView.text = formatForPTBrDate(items.data)
 
-        if(items.periodos.periodoManha != null && items.periodos.periodoManha == 1){
+        if (items.periodos.periodoManha != null && items.periodos.periodoManha == 1) {
             periodMorningView.text = "Manhã"
         }
 
-        if(items.periodos.periodoTarde != null && items.periodos.periodoTarde == 2){
+        if (items.periodos.periodoTarde != null && items.periodos.periodoTarde == 2) {
             periodAfternoonView.text = "Tarde"
         }
 
-        return  view!!
+        view.setOnClickListener {
+            onItemClickListener?.onItemClick(position, items)
+        }
+
+        return view
     }
 
     private fun formatForPTBrDate(date: String): String {
         var offsetDateTime = OffsetDateTime.parse(date, DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX"))
         var localDate = offsetDateTime.toLocalDate()
         return localDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+    }
+
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.onItemClickListener = listener
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(position: Int, schedule: Schedule)
     }
 }
