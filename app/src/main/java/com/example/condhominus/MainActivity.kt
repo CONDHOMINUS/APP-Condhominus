@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentManager
 import com.example.condhominus.databinding.ActivityMainBinding
 import com.example.condhominus.ext.UserSharedPreferences
 import com.example.condhominus.ext.replaceFragmentWithAnimation
-import com.example.condhominus.model.Login
+import com.example.condhominus.model.login.Login
 import com.example.condhominus.ui.home.HomeFragment
 import com.example.condhominus.ui.login.LoginFragment
 import com.example.condhominus.ui.register.condominium.RegisterCondominiumFragment

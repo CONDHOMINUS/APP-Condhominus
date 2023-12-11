@@ -1,4 +1,4 @@
-package com.example.condhominus.model
+package com.example.condhominus.model.address
 
 data class AddressResponse(
     val cep: String?,

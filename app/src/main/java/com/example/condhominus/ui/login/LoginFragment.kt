@@ -11,10 +11,9 @@ import com.example.condhominus.R
 import com.example.condhominus.databinding.FragmentLoginBinding
 import com.example.condhominus.ext.DocumentMask
 import com.example.condhominus.ext.UserSharedPreferences
-import com.example.condhominus.ext.gone
 import com.example.condhominus.ext.replaceFragmentWithAnimation
 import com.example.condhominus.ext.visible
-import com.example.condhominus.model.LoginBody
+import com.example.condhominus.model.login.LoginBody
 import com.example.condhominus.ui.home.HomeFragment
 import com.example.condhominus.utils.TextUtils
 import com.google.android.material.snackbar.Snackbar

@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="40dp"
             android:text="@string/register_tenant"
             android:textColor="@color/green_pattern"
             android:textSize="25dp"
@@ -100,6 +100,27 @@
             app:layout_constraintTop_toBottomOf="@+id/inputDocumentUser"
             app:layout_constraintVertical_bias="0" />
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/aptoNumberView"
+            style="@style/EditTextLayoutBackgroundGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/condominioAutoCompleteView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aptoView"
+                style="@style/CondhominusEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/placeholder_apto_register"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:translationY="-8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <TextView
             android:id="@+id/warningAllFields"
             android:layout_width="wrap_content"
@@ -123,7 +144,6 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:text="@string/register"
-            android:enabled="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -144,5 +164,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/errorMessageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/green_pattern"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/error_list_condominiums" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

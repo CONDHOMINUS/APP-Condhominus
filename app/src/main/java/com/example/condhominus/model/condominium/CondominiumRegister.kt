@@ -1,4 +1,4 @@
-package com.example.condhominus.model
+package com.example.condhominus.model.condominium
 
 data class CondominiumRegister(
     val nome: String,

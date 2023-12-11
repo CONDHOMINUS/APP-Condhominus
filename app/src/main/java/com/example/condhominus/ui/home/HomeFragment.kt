@@ -14,7 +14,7 @@ import com.example.condhominus.ext.UserSharedPreferences
 import com.example.condhominus.ext.gone
 import com.example.condhominus.ext.replaceFragmentWithAnimation
 import com.example.condhominus.ext.visible
-import com.example.condhominus.model.Login
+import com.example.condhominus.model.login.Login
 import com.example.condhominus.ui.financial.FinancialFragment
 import com.example.condhominus.ui.scheduling.SchedulingFragment
 

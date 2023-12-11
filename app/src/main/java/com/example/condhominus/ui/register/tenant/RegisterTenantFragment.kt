@@ -12,20 +12,20 @@ import com.example.condhominus.customview.CondhominusEditTextAutoCompleteView
 import com.example.condhominus.databinding.FragmentRegisterTenantBinding
 import com.example.condhominus.ext.DateMask
 import com.example.condhominus.ext.DocumentMask
+import com.example.condhominus.ext.formatBornDate
 import com.example.condhominus.ext.gone
 import com.example.condhominus.ext.visible
-import com.example.condhominus.model.Address
-import com.example.condhominus.model.Condominium
-import com.example.condhominus.model.Person
-import com.example.condhominus.model.Tenant
+import com.example.condhominus.model.condominium.CondominiumItem
+import com.example.condhominus.model.tenant.Person
+import com.example.condhominus.model.tenant.Tenant
 
 class RegisterTenantFragment : Fragment() {
 
     private var _binding: FragmentRegisterTenantBinding? = null
     private val binding get() = _binding!!
     private lateinit var viewModel: RegisterTenantViewModel
-    private val listCondominium = listOf("Vermont, 89035-212", "Star Gate, 89030-110", "Residencial Arboris, 89037-506")
-
+    private var listCondominiums: List<CondominiumItem>? = null
+    private var condominiumIdSelected: Int? = null
 
     companion object {
         @JvmStatic
@@ -40,44 +40,39 @@ class RegisterTenantFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this)[RegisterTenantViewModel::class.java]
+        viewModel.getCondominiums()
+        hideViews()
+        showLoading()
 
         with(binding) {
             bornView.addTextChangedListener(DateMask(bornView))
             documentView.addTextChangedListener(DocumentMask(documentView))
             buttonSave.setOnClickListener {
-                if (!condominioAutoCompleteView.getTextValue().isNullOrEmpty() && nameView.text.toString().isNotEmpty() && bornView.text.toString().isNotEmpty()) {
+                if (!condominioAutoCompleteView.getTextValue().isNullOrEmpty() && nameView.text.toString().isNotEmpty() && aptoView.text.toString().isNotEmpty() && bornView.text.toString().isNotEmpty()) {
                     warningAllFields.gone()
-                    viewModel.setTenant(Tenant(
-                        condominio = Condominium(
-                            condominioAutoCompleteView.getTextValue()!!,
-                            Address("89035-212", "rua Gen Arthur Koheler", "Blumenau", "SC", "Brasil", Person( nameView.text.toString(), "2002-03-21T00:00:00"))
-                        ),
-                        pessoa = Person(
-                            nameView.text.toString(),
-                            "2002-03-21T00:00:00"
-                        ),
-                        numeroApartamento = "1203"
-                    ))
+                    viewModel.setTenant(
+                        Tenant(
+                            aptoView.text.toString(),
+                            condominiumIdSelected ?: 0,
+                            Person(
+                                nameView.text.toString(),
+                                documentView.text.toString().replace("\\D".toRegex(), ""),
+                                bornView.text.toString().formatBornDate()
+                            )
+                        )
+                    )
                 } else {
                     warningAllFields.visible()
                 }
             }
-
-            condominioAutoCompleteView.initViews(listCondominium, object :
-                CondhominusEditTextAutoCompleteView.AutoCompleteListener {
-                override fun onItemClicked(itemClicked: String) {
-                    println("item: $itemClicked")
-                }
-
-                override fun onEmptyList() {
-                   println("lista vazia")
-                }
-            })
         }
 
         with(viewModel) {
             errorLive.observe(viewLifecycleOwner, Observer {
                 println(it)
+                hideLoading()
+                hideViews()
+                showErrorMessage("Aconteceu um erro, tente cadastrar novamente!")
             })
 
             registerTenantLive.observe(viewLifecycleOwner, Observer {
@@ -90,13 +85,27 @@ class RegisterTenantFragment : Fragment() {
                     alertDialogRegister()
                 }
             })
+
+            listCondominiumsLive.observeForever { listCondominiums ->
+                if (!listCondominiums.condominios.isNullOrEmpty()) {
+                    hideLoading()
+                    showViews()
+                    this@RegisterTenantFragment.listCondominiums = listCondominiums.condominios
+                    bindAutoCompleteEditText(listCondominiums.condominios.map { it.descricaoCondominio })
+
+                } else {
+                    hideLoading()
+                    hideViews()
+                    showErrorMessage("Para cadastrar um inquilino, você precisa ter condomínios cadastrados.")
+                }
+            }
         }
     }
 
     private fun alertDialogRegister() {
         AlertDialog.Builder(context)
             .setTitle("Cadastro")
-            .setMessage("Inquilino ${binding.nameView.text.toString()}, cadastrado com sucesso!")
+            .setMessage("Inquilino ${binding.nameView.text.toString()} cadastrado com sucesso!")
             .setNegativeButton("OK") { dialog, _ ->
                 clearFields()
                 dialog.dismiss()
@@ -111,6 +120,7 @@ class RegisterTenantFragment : Fragment() {
             nameView.text ?.clear()
             bornView.text?.clear()
             documentView.text?.clear()
+            aptoView.text?.clear()
         }
     }
 
@@ -129,5 +139,38 @@ class RegisterTenantFragment : Fragment() {
 
     private fun hideViews() {
         binding.registerViewGroup.gone()
+    }
+
+    private fun showErrorMessage(message: String) {
+        binding.errorMessageView.apply {
+            visible()
+            text = message
+        }
+    }
+
+    private fun bindAutoCompleteEditText(condominiumName: List<String>) {
+        with(binding) {
+            condominioAutoCompleteView.initViews(condominiumName, object :
+                CondhominusEditTextAutoCompleteView.AutoCompleteListener {
+                override fun onItemClicked(itemClicked: String) {
+                    findCondominiumIdSelected(itemClicked)
+                }
+
+                override fun onEmptyList() {
+                    println("lista vazia")
+                }
+            })
+        }
+    }
+
+    fun findCondominiumIdSelected(name: String): Int? {
+        listCondominiums?.let {
+            for (item in it) {
+                if (item.descricaoCondominio == name) {
+                    this.condominiumIdSelected = item.idCondominio
+                }
+            }
+        }
+        return null
     }
 }

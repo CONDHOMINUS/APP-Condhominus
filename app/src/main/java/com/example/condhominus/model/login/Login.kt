@@ -1,4 +1,4 @@
-package com.example.condhominus.model
+package com.example.condhominus.model.login
 
 data class LoginBody(
     val login: String,

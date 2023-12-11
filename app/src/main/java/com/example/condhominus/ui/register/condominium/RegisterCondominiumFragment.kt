@@ -13,8 +13,8 @@ import com.example.condhominus.databinding.FragmentRegisterCondominiumBinding
 import com.example.condhominus.ext.ZipCodeMask
 import com.example.condhominus.ext.gone
 import com.example.condhominus.ext.visible
-import com.example.condhominus.model.CondominiumRegister
-import com.example.condhominus.model.Endereco
+import com.example.condhominus.model.condominium.CondominiumRegister
+import com.example.condhominus.model.condominium.Endereco
 
 class RegisterCondominiumFragment : Fragment() {
 
@@ -64,7 +64,10 @@ class RegisterCondominiumFragment : Fragment() {
                     loadingProgress.visible()
                     condominiumRootView.gone()
                 } else {
-                    warningView.visible()
+                    warningView.apply {
+                        visible()
+                        text = "Preencha todos os campos"
+                    }
                 }
             }
         }

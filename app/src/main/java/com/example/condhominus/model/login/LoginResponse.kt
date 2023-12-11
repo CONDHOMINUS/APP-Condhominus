@@ -1,4 +1,4 @@
-package com.example.condhominus.model
+package com.example.condhominus.model.login
 
 import com.google.gson.annotations.SerializedName
 

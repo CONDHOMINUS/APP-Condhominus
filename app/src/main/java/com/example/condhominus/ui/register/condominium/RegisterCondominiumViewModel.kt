@@ -3,9 +3,9 @@ package com.example.condhominus.ui.register.condominium
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.condhominus.model.AddressResponse
-import com.example.condhominus.model.CondominiumRegister
-import com.example.condhominus.model.CondominiumResponse
+import com.example.condhominus.model.address.AddressResponse
+import com.example.condhominus.model.condominium.CondominiumRegister
+import com.example.condhominus.model.condominium.CondominiumResponse
 import com.example.condhominus.repository.AddressRepository
 import com.example.condhominus.repository.RegisterRepository
 import kotlinx.coroutines.launch
