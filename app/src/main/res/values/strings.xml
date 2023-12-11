@@ -30,4 +30,7 @@
     <string name="country">País</string>
     <string name="number">Número</string>
     <string name="name">Nome do Condomínio</string>
+    <string name="agendas_disponiveis">Agendas disponíveis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
