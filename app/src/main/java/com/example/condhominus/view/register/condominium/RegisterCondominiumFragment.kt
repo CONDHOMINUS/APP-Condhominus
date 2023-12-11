@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.register.condominium
+package com.example.condhominus.view.register.condominium
 
 import android.app.AlertDialog
 import android.content.Context
@@ -15,6 +15,7 @@ import com.example.condhominus.ext.gone
 import com.example.condhominus.ext.visible
 import com.example.condhominus.model.condominium.CondominiumRegister
 import com.example.condhominus.model.condominium.Endereco
+import com.example.condhominus.view.register.viewmodel.RegisterCondominiumViewModel
 
 class RegisterCondominiumFragment : Fragment() {
 

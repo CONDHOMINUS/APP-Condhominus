@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.register.tenant
+package com.example.condhominus.view.register.tenant
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -18,6 +18,7 @@ import com.example.condhominus.ext.visible
 import com.example.condhominus.model.condominium.CondominiumItem
 import com.example.condhominus.model.tenant.Person
 import com.example.condhominus.model.tenant.Tenant
+import com.example.condhominus.view.register.viewmodel.RegisterTenantViewModel
 
 class RegisterTenantFragment : Fragment() {
 

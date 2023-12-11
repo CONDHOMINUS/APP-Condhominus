@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.login
+package com.example.condhominus.view.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,8 +14,9 @@ import com.example.condhominus.ext.UserSharedPreferences
 import com.example.condhominus.ext.replaceFragmentWithAnimation
 import com.example.condhominus.ext.visible
 import com.example.condhominus.model.login.LoginBody
-import com.example.condhominus.ui.home.HomeFragment
+import com.example.condhominus.view.home.HomeFragment
 import com.example.condhominus.utils.TextUtils
+import com.example.condhominus.view.login.viewmodel.LoginViewModel
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 

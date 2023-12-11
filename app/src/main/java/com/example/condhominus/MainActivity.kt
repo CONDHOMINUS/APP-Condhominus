@@ -12,10 +12,10 @@ import com.example.condhominus.databinding.ActivityMainBinding
 import com.example.condhominus.ext.UserSharedPreferences
 import com.example.condhominus.ext.replaceFragmentWithAnimation
 import com.example.condhominus.model.login.Login
-import com.example.condhominus.ui.home.HomeFragment
-import com.example.condhominus.ui.login.LoginFragment
-import com.example.condhominus.ui.register.condominium.RegisterCondominiumFragment
-import com.example.condhominus.ui.register.tenant.RegisterTenantFragment
+import com.example.condhominus.view.home.HomeFragment
+import com.example.condhominus.view.login.LoginFragment
+import com.example.condhominus.view.register.condominium.RegisterCondominiumFragment
+import com.example.condhominus.view.register.tenant.RegisterTenantFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity(), HomeFragment.HomeFragmentListener, FragmentManager.OnBackStackChangedListener {

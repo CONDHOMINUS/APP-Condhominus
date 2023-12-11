@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.login
+package com.example.condhominus.view.login.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

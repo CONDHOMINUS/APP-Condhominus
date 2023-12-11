@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.financial
+package com.example.condhominus.view.financial
 
 import android.os.Bundle
 import android.view.LayoutInflater

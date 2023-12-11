@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.scheduling
+package com.example.condhominus.view.scheduling
 
 import android.os.Bundle
 import android.view.LayoutInflater

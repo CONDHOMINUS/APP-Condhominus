@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.theme
+package com.example.condhominus.view.theme
 
 import android.app.Activity
 import android.os.Build

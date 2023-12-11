@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.theme
+package com.example.condhominus.view.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

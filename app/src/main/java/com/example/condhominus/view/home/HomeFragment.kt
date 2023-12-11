@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.home
+package com.example.condhominus.view.home
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -15,8 +15,8 @@ import com.example.condhominus.ext.gone
 import com.example.condhominus.ext.replaceFragmentWithAnimation
 import com.example.condhominus.ext.visible
 import com.example.condhominus.model.login.Login
-import com.example.condhominus.ui.financial.FinancialFragment
-import com.example.condhominus.ui.scheduling.SchedulingFragment
+import com.example.condhominus.view.financial.FinancialFragment
+import com.example.condhominus.view.scheduling.SchedulingFragment
 
 class HomeFragment : Fragment() {
 

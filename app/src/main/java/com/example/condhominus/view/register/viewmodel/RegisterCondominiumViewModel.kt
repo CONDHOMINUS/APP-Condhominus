@@ -1,4 +1,4 @@
-package com.example.condhominus.ui.register.condominium
+package com.example.condhominus.view.register.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
