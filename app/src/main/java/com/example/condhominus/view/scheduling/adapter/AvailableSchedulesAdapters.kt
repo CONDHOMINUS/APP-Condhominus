@@ -4,6 +4,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.condhominus.R
+import com.example.condhominus.ext.visible
 import com.example.condhominus.model.AvailableSchedulesResponse
 import com.example.condhominus.model.Schedule
 import java.time.OffsetDateTime
@@ -28,18 +29,23 @@ class AvailableSchedulesAdapters(
         var dateView: TextView = view.findViewById(R.id.availableDateView)
         var periodMorningView: TextView = view.findViewById(R.id.periodMorningView)
         var periodAfternoonView: TextView = view.findViewById(R.id.periodAfternoonView)
-        var slashPeriodView: TextView = view.findViewById(R.id.slashMorningView)
 
         var items: Schedule = availableSchedules.agendas[position]
 
         dateView.text = formatForPTBrDate(items.data)
 
         if (items.periodos.periodoManha != null && items.periodos.periodoManha == 1) {
-            periodMorningView.text = "Manhã"
+            periodMorningView.apply {
+                visible()
+                text = "Manhã"
+            }
         }
 
         if (items.periodos.periodoTarde != null && items.periodos.periodoTarde == 2) {
-            periodAfternoonView.text = "Tarde"
+            periodAfternoonView.apply {
+                visible()
+                text = "Tarde"
+            }
         }
 
         view.setOnClickListener {
