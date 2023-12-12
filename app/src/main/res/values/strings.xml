@@ -13,6 +13,7 @@
     <string name="register_tenant">Cadastro de Inquilino</string>
     <string name="register_condominium">Cadastro de Condomínio</string>
     <string name="condominium">Condomínio</string>
+    <string name="email">Email</string>
     <string name="obs">Observação</string>
     <string name="placeholder_document">Informe seu CPF</string>
     <string name="password">Senha</string>

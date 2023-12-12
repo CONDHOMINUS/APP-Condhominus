@@ -87,6 +87,26 @@
                 android:translationY="-8dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputEmail"
+            style="@style/EditTextLayoutBackgroundGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputDocumentUser">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailView"
+                style="@style/CondhominusEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:translationY="-8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <com.example.condhominus.customview.CondhominusEditTextAutoCompleteView
             android:id="@+id/condominioAutoCompleteView"
             android:layout_width="match_parent"
@@ -97,7 +117,7 @@
             app:layout_constraintBottom_toTopOf="@+id/buttonSave"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputDocumentUser"
+            app:layout_constraintTop_toBottomOf="@+id/inputEmail"
             app:layout_constraintVertical_bias="0" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -178,7 +198,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/error_list_condominiums" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
