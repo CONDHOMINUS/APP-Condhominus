@@ -1,4 +1,4 @@
-package com.example.condhominus.model
+package com.example.condhominus.model.schedule
 
 data class AvailableSchedulesResponse (
     val sucesso: Boolean,

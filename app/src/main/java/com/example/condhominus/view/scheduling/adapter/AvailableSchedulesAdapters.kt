@@ -5,8 +5,8 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.condhominus.R
 import com.example.condhominus.ext.visible
-import com.example.condhominus.model.AvailableSchedulesResponse
-import com.example.condhominus.model.Schedule
+import com.example.condhominus.model.schedule.AvailableSchedulesResponse
+import com.example.condhominus.model.schedule.Schedule
 import java.time.OffsetDateTime
 import java.time.format.DateTimeFormatter
 
@@ -63,6 +63,11 @@ class AvailableSchedulesAdapters(
 
     fun setOnItemClickListener(listener: OnItemClickListener) {
         this.onItemClickListener = listener
+    }
+
+    fun updateData(newSchedules: AvailableSchedulesResponse) {
+        availableSchedules = newSchedules
+        notifyDataSetChanged()
     }
 
     interface OnItemClickListener {

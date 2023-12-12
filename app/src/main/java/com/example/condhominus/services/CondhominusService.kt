@@ -1,10 +1,11 @@
 package com.example.condhominus.services
 
-import com.example.condhominus.model.AvailableSchedulesResponse
+import com.example.condhominus.model.schedule.AvailableSchedulesResponse
 import com.example.condhominus.model.address.AddressResponse
 import com.example.condhominus.model.condominium.CondominiumResponse
 import com.example.condhominus.model.condominium.CondominiumsListResponse
 import com.example.condhominus.model.login.LoginResponse
+import com.example.condhominus.model.schedule.ScheduleResponse
 import com.example.condhominus.model.tenant.TenantResponse
 import okhttp3.RequestBody
 import retrofit2.Response
@@ -32,4 +33,7 @@ interface CondhominusService {
 
     @GET("/agendamentomudanca/obteragendasdisponiveis")
     suspend fun getAvailableSchedules(): Response<AvailableSchedulesResponse>
+
+    @POST("/agendamentomudanca/cadastrar")
+    suspend fun toSchedule(@Body body: RequestBody): Response<ScheduleResponse>
 }
