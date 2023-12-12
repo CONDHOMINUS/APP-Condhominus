@@ -72,24 +72,6 @@ class SchedulingFragment : Fragment() {
                 }
             }
 
-//            availableSchedulesLive.observeForever {
-//                it.let {
-//                    binding.apply {
-//                        cardViewList.adapter = AvailableSchedulesAdapters(binding.root.context, it).apply {
-//                            setOnItemClickListener(object : AvailableSchedulesAdapters.OnItemClickListener {
-//                                override fun onItemClick(position: Int, schedule: Schedule) {
-//                                    alertDialogWithEditText(schedule)
-//                                }
-//                            })
-//                        }
-//                    }
-//                    binding.apply {
-//                        rootViewGroup.visible()
-//                        loadingView.gone()
-//                    }
-//                }
-//            }
-
             toScheduleLive.observeForever {
                 if (it.sucesso) {
                     it.let {
