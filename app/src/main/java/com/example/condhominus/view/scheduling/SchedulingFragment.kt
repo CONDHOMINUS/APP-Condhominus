@@ -2,23 +2,20 @@ package com.example.condhominus.view.scheduling
 
 import AvailableSchedulesAdapters
 import android.app.AlertDialog
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
+import androidx.appcompat.widget.AppCompatRadioButton
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.condhominus.databinding.FragmentPopUpRegisterScheduleBinding
 import com.example.condhominus.databinding.FragmentSchedulingBinding
-import com.example.condhominus.ext.formatBornDate
+import com.example.condhominus.ext.formatDate
+import com.example.condhominus.ext.gone
+import com.example.condhominus.ext.visible
 import com.example.condhominus.model.Schedule
 import com.example.condhominus.view.scheduling.viewmodel.SchedulingViewModel
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Locale
 
 class SchedulingFragment : Fragment() {
 
@@ -49,7 +46,7 @@ class SchedulingFragment : Fragment() {
                         cardViewList.adapter = AvailableSchedulesAdapters(binding.root.context, it).apply {
                             setOnItemClickListener(object : AvailableSchedulesAdapters.OnItemClickListener {
                                 override fun onItemClick(position: Int, schedule: Schedule) {
-                                    alertDialogWithEditText(schedule.data)
+                                    alertDialogWithEditText(schedule)
                                 }
                             })
                         }
@@ -58,15 +55,55 @@ class SchedulingFragment : Fragment() {
             }
         }
     }
-    private fun alertDialogWithEditText(date: String) {
+
+    private fun alertDialogWithEditText(schedule: Schedule) {
+        var selectedRadioButton: AppCompatRadioButton?
+        var selectedRadioText: String?
         val customAlertViewBinding = FragmentPopUpRegisterScheduleBinding.inflate(layoutInflater)
-        customAlertViewBinding.aptoView.setText(date)
+        customAlertViewBinding.apply {
+            aptoView.apply {
+                isEnabled = false
+                setText(schedule.data.formatDate())
+            }
+
+            when (schedule.periodos.periodoManha) {
+                0 -> {
+                    radioAfternoonView.isChecked = true
+                    radioMorningView.gone()
+                }
+
+                1 -> {
+                    radioMorningView.visible()
+                }
+            }
+
+            when (schedule.periodos.periodoTarde) {
+                0 -> {
+                    radioMorningView.isChecked = true
+                    radioAfternoonView.gone()
+                }
+
+                2 -> {
+                    radioAfternoonView.visible()
+                }
+            }
+        }
 
        AlertDialog.Builder(requireContext())
-            .setTitle("Agendamento")
+            .setTitle("Agendamento ${schedule.data.formatDate()}")
             .setView(customAlertViewBinding.root)
-            .setPositiveButton("Confirmar") { dialog, _ ->
-                println("Data que está no input: $date")
+            .setPositiveButton("Agendar") { dialog, _ ->
+                with(customAlertViewBinding) {
+                    selectedRadioButton = when (radioViewGroup.checkedRadioButtonId) {
+                        radioMorningView.id -> radioMorningView
+                        radioAfternoonView.id -> radioAfternoonView
+                        else -> null
+                    }
+
+                     selectedRadioText = selectedRadioButton?.text?.toString()
+                    println("Botão de rádio selecionado: $selectedRadioText")
+                }
+
                 dialog.dismiss()
             }
             .setNegativeButton("Cancelar") { dialog, _ ->
@@ -74,14 +111,5 @@ class SchedulingFragment : Fragment() {
             }
             .create()
             .show()
-    }
-
-    private fun getCurrentDate(): String =
-        SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(Calendar.getInstance().time)
-
-    private fun formatDate(year: Int, month: Int, dayOfMonth: Int): String {
-        val calendar = Calendar.getInstance()
-        calendar.set(year, month, dayOfMonth)
-        return SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(calendar.time)
     }
 }
