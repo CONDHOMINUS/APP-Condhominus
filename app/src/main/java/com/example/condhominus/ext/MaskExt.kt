@@ -7,6 +7,7 @@ import android.widget.EditText
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.Date
+import java.util.Locale
 
 class DocumentMask(private val editText: EditText) : TextWatcher {
 
@@ -165,4 +166,12 @@ fun String.formatBornDate(): String {
         e.printStackTrace()
         ""
     }
+}
+
+fun String.formatDate(): String {
+    val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.getDefault())
+    val date = inputFormat.parse(this)
+    val outputFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+
+    return outputFormat.format(date)
 }

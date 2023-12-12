@@ -32,4 +32,7 @@
     <string name="country">País</string>
     <string name="number">Número</string>
     <string name="name">Nome do Condomínio</string>
+    <string name="agendas_disponiveis">Agendas disponíveis</string>
+    <string name="date">Data</string>
+    <string name="seleted_period">Selecione um período para agendamento</string>
 </resources>
