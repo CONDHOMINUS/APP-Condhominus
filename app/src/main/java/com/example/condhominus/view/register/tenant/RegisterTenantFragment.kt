@@ -16,6 +16,7 @@ import com.example.condhominus.ext.formatBornDate
 import com.example.condhominus.ext.gone
 import com.example.condhominus.ext.visible
 import com.example.condhominus.model.condominium.CondominiumItem
+import com.example.condhominus.model.tenant.Contato
 import com.example.condhominus.model.tenant.Person
 import com.example.condhominus.model.tenant.Tenant
 import com.example.condhominus.view.register.viewmodel.RegisterTenantViewModel
@@ -49,7 +50,7 @@ class RegisterTenantFragment : Fragment() {
             bornView.addTextChangedListener(DateMask(bornView))
             documentView.addTextChangedListener(DocumentMask(documentView))
             buttonSave.setOnClickListener {
-                if (!condominioAutoCompleteView.getTextValue().isNullOrEmpty() && nameView.text.toString().isNotEmpty() && aptoView.text.toString().isNotEmpty() && bornView.text.toString().isNotEmpty()) {
+                if (!condominioAutoCompleteView.getTextValue().isNullOrEmpty() && emailView.text.toString().isNotEmpty() && nameView.text.toString().isNotEmpty() && aptoView.text.toString().isNotEmpty() && bornView.text.toString().isNotEmpty()) {
                     warningAllFields.gone()
                     viewModel.setTenant(
                         Tenant(
@@ -59,7 +60,8 @@ class RegisterTenantFragment : Fragment() {
                                 nameView.text.toString(),
                                 documentView.text.toString().replace("\\D".toRegex(), ""),
                                 bornView.text.toString().formatBornDate()
-                            )
+                            ),
+                            Contato(emailView.text.toString())
                         )
                     )
                 } else {
@@ -122,6 +124,7 @@ class RegisterTenantFragment : Fragment() {
             bornView.text?.clear()
             documentView.text?.clear()
             aptoView.text?.clear()
+            emailView.text?.clear()
         }
     }
 
